@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rakshit Yadav - Portfolio</title>
+    <style>
+        /* 1. GENERAL PAGE STYLE */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center; /* Centers all text on the page */
+            margin: 0;
+        }
+
+        /* 2. BLUE HEADER */
+        header {
+            background-color: #0047AB; /* Dark Blue */
+            color: white;
+            padding: 20px;
+        }
+        header a {
+            color: white; /* Makes links white */
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        /* 3. PROFILE PICTURE */
+        .profile-img {
+            width: 150px;
+            border-radius: 50%; /* Makes the image a circle */
+            border: 3px solid #d0e1fd;
+            margin-top: 20px;
+        }
+
+        /* 4. SECTIONS (Adding space between parts of the page) */
+        section {
+            padding: 20px;
+            border-bottom: 1px solid #ccc; /* Light grey line at the bottom */
+        }
+        h2 {
+            color: #0047AB; /* Blue headings */
+        }
+
+        /* 5. TABLES (For Education & Skills) */
+        table {
+            margin: 0 auto; /* Centers the table */
+            width: 60%;
+            border-collapse: collapse; /* Removes double borders */
+        }
+        th, td {
+            border: 1px solid #0047AB; /* Blue border for cells */
+            padding: 10px;
+        }
+        th {
+            background-color: #0047AB; /* Blue header row */
+            color: white;
+        }
+
+        /* 6. PROJECT BOXES */
+        .project-box {
+            border: 1px solid #ccc;
+            width: 60%;
+            margin: 10px auto; /* Centers the box */
+            padding: 10px;
+        }
+
+        /* 7. CONTACT FORM */
+        input, textarea {
+            width: 250px;
+            margin-bottom: 10px;
+            padding: 5px;
+            border: 1px solid #0047AB;
+        }
+        button {
+            background-color: #0047AB;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>My Portfolio</h1>
+        <nav>
+            <a href="#about">About</a> |
+            <a href="#skills">Skills</a> |
+            <a href="#projects">Projects</a> |
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills">
+        <h2>My Skills</h2>
+        <table>
+            <tr>
+                <th>Skill</th>
+                <th>Level</th>
+            </tr>
+            <tr>
+                <td>HTML & CSS</td>
+                <td>Beginner</td>
+            </tr>
+            <tr>
+                <td>Basic Computer</td>
+                <td>Average</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects">
+        <h2>My Projects</h2>
+        
+        <div class="project-box">
+            <h3>Project 1</h3>
+            <p>HTML & CSS portfolio.</p>
+        </div>
+
+        <div class="project-box">
+            <h3>Project 2</h3>
+            <p>Assessment project.</p>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <label>Name:</label><br>
+            <input type="text" placeholder="Enter your name"><br>
+            
+            <label>Email:</label><br>
+            <input type="email" placeholder="Enter your email"><br>
+            
+            <label>Message:</label><br>
+            <textarea placeholder="Enter your message"></textarea><br>
+            
+            <button type="button">Send</button>
+        </form>
+    </section>
+
+</body>
+</html>
